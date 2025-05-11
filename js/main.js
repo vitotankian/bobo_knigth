@@ -272,7 +272,7 @@ function getHappiness() {
 }
 
 function getEvil() {
-    return (gameData.evil) * 2
+    return gameData.evil
 }
 
 function getEvilXpGain() {
