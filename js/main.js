@@ -272,7 +272,7 @@ function getHappiness() {
 }
 
 function getEvil() {
-    return gameData.evil
+    return gameData.evil * 2
 }
 
 function getEvilXpGain() {
@@ -280,7 +280,7 @@ function getEvilXpGain() {
 
     if (gameData.active_challenge == "dance_with_the_devil") {
         const evilEffect = (Math.pow(getEvil(), 0.35) / 1e3) - 1
-        return evilEffect < 0 ? 0 : evilEffect * 3
+        return evilEffect < 0 ? 0 : evilEffect
     }
 
     return getEvil()
